@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/olancheg/ccpa-string-builder-js.git"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "eslint": "^6.8.0",
     "jasmine": "^3.5.0",
