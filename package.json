@@ -4,7 +4,7 @@
   "description": "CCPA String Builder for JavaScript",
   "main": "dist/ccpa-string-builder.js",
   "scripts": {
-    "build": "npm run webpack",
+    "build": "webpack",
     "lint": "eslint src",
     "test": "npm run testBrowser && npm run testNode",
     "testBrowser": "npm run build && karma start karma.conf.js",
