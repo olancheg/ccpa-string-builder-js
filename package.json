@@ -1,6 +1,6 @@
 {
   "name": "ccpa-string-builder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CCPA String Builder for JavaScript",
   "main": "dist/ccpa-string-builder.js",
   "scripts": {
