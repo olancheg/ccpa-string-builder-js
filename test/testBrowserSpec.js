@@ -6,24 +6,6 @@ describe('CCPAStringBuilder', () => {
     expect(typeof ccpaStringBuilder).toBe('function')
   })
 
-  it('should trigger error on wrong param type for explicitOptOut', () => {
-    expect(function () {
-      ccpaStringBuilder({ explicitOptOut: 1 })
-    }).toThrowError('Explicit Notice/Opportunity to Opt Out value must be either undefined or boolean')
-  })
-
-  it('should trigger error on wrong param type for explicitOptOut', () => {
-    expect(function () {
-      ccpaStringBuilder({ outOutSale: 1 })
-    }).toThrowError('Opt-Out Sale value must be either undefined or boolean')
-  })
-
-  it('should trigger error on wrong param type for lspa', () => {
-    expect(function () {
-      ccpaStringBuilder({ lspa: 1 })
-    }).toThrowError('LSPA Covered Transaction value must be either undefined or boolean')
-  })
-
   it('should return correct values', () => {
     expect(ccpaStringBuilder({})).toBe('1---')
     expect(ccpaStringBuilder({ explicitOptOut: true })).toBe('1Y--')
