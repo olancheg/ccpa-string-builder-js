@@ -5,7 +5,7 @@ declare const NO = "N";
 declare const _convert: (value: boolean) => string;
 interface Arguments {
     explicitOptOut?: boolean;
-    outOutSale?: boolean;
+    optOutSale?: boolean;
     lspa?: boolean;
 }
 declare const CCPAStringBuilder: (args: Arguments) => string;

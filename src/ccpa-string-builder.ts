@@ -16,12 +16,12 @@ const _convert = (value: boolean): string => {
 
 interface Arguments {
   explicitOptOut?: boolean
-  outOutSale?: boolean
+  optOutSale?: boolean
   lspa?: boolean
 }
 
 const CCPAStringBuilder = (args: Arguments) => {
-  return [SPEC_VERSION, _convert(args.explicitOptOut), _convert(args.outOutSale), _convert(args.lspa)].join('')
+  return [SPEC_VERSION, _convert(args.explicitOptOut), _convert(args.optOutSale), _convert(args.lspa)].join('')
 }
 
 module.exports = CCPAStringBuilder

@@ -31,7 +31,7 @@ To generate the string, use following syntax:
 ```js
 const privacyString = CCPAStringBuilder({
   explicitOptOut: true,
-  outOutSale: true,
+  optOutSale: true,
   lspa: true,
 })
 ```
@@ -44,6 +44,6 @@ const privacyString = CCPAStringBuilder({})
 
 will produce `1---`
 
-You may pass either `undefined` (Not Applicable) or boolean value for `explicitOptOut`, `outOutSale`, or `lspa` properties. Omitting parameter is the same as passing `undefined`.
+You may pass either `undefined` (Not Applicable) or boolean value for `explicitOptOut`, `optOutSale`, or `lspa` properties. Omitting parameter is the same as passing `undefined`.
 
 Definitions of each component can be found [here](https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/US%20Privacy%20String.md#us-privacy-string-format)
